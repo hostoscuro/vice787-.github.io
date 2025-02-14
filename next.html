@@ -10,6 +10,10 @@
             margin: 0;
             overflow: hidden;
             position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .emoji {
             position: absolute;
@@ -31,11 +35,21 @@
         .emoji {
             animation: fall linear infinite, sparkle 1s infinite alternate;
         }
+        .center-text {
+            position: absolute;
+            color: white;
+            font-size: 3rem;
+            z-index: 10;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <!-- Elemento de audio para reproducir el MP3 -->
     <audio id="background-music" src="oli.mp3"></audio>
+
+    <!-- Texto en el centro -->
+    <div class="center-text">estoy muy cansado  :(   y algo timido por el cansancio  no quiero repetir lo mismo te e escrito. pero  eres ultra especial para mi  y no encuentro las palabras para expresarlo  pero quisiera poder seguir conociendote y seguir compartiendo aventuras jutos   y crear una union que nada la pueda romper  me gustas por dentro y por fuera   muchote   es tanto lo que me gustaria decir me blokeo quiza por el cansancio  pero  de cora que quisiera tener algo serio con tigo  tu quieres?</div>
 
     <script>
         const emojis = ['😘', '🥰', '😍', '🫶', '🥺'];
