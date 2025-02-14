@@ -178,7 +178,7 @@
         startButton.addEventListener('click', () => {
             startScreen.style.display = 'none'; // Ocultar la pantalla inicial
             heartContainer.style.display = 'grid'; // Mostrar el corazón
-            createHeart(50); // Crear el corazón con el tamaño deseado
+            createHeart(30); // Crear el corazón con el tamaño deseado
             audio.play().catch(error => {
                 console.log("La reproducción automática fue bloqueada. Haz clic para reproducir.");
             });
